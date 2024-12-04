@@ -32,7 +32,16 @@ class LinkedList:
 
 
 
+    def printing_list(self):
+        if not self.head:
+            print("LList is empty")
+            return
 
+        current_read = self.head
+        while current_read:
+            print(current_read.data, end=" -> ")
+            current_read = current_read.next
+        print("None")
 
         
 
