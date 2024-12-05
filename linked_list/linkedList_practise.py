@@ -23,12 +23,6 @@ class LinkedList:
             self.head = new_node
             return
 
-        last_checked = self.head
-
-        while last_checked.next:
-            last_checked = last_checked.next
-
-        last_checked.next = new_node
 
 
 
